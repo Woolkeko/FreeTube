@@ -1,11 +1,12 @@
 <template>
-  <details>
-    <summary>
-      <h3>
-        {{ $t("Settings.General Settings.General Settings") }}
-      </h3>
-    </summary>
-    <hr>
+  <ft-card
+    class="card"
+  >
+    <h3
+      class="videoTitle"
+    >
+      {{ $t("Settings.General Settings.General Settings") }}
+    </h3>
     <div class="switchColumnGrid">
       <div class="switchColumn">
         <ft-toggle-switch
@@ -141,7 +142,7 @@
         />
       </ft-flex-box>
     </div>
-  </details>
+  </ft-card>
 </template>
 
 <script src="./general-settings.js" />
